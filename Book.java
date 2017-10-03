@@ -17,7 +17,7 @@ class Book
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, nt bookPages)
     {
         author = bookAuthor;
         title = bookTitle;
@@ -49,7 +49,12 @@ class Book
         System.out.println("Title of the Book is: " + title);
     }
     
-    
+    public void printDetails()
+    {
+        System.out.println("Author:");
+        System.out.println("Title: ");
+        System.out.println("Pages: ");
+    }
     
     
 }
