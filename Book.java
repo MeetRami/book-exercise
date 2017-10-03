@@ -14,6 +14,7 @@ class Book
     private int pages;
     private String refNumber;
 
+    
     /**
      * Set the author and title fields when this object
      * is constructed.
