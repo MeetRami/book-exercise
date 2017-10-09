@@ -16,6 +16,7 @@ class Book
     private int pages;
     private String refNumber;
     private int borrowed;
+    private boolean courseText;
 
     
     /**
@@ -29,6 +30,7 @@ class Book
         pages = bookPages;
         refNumber = ("");
         borrowed = 0;
+
     }
     
     public void setRefNumber(String ref)
@@ -47,6 +49,22 @@ class Book
             System.out.println("Book Borrowed cannot be Negative!: ");
         }
     }
+    
+    public boolean isCourseText()
+    {
+
+        
+        if(courseText == true)
+        {
+           System.out.println("The book has been used as a Text book before");
+        }
+        else
+        {
+        System.out.println("The book has not been used as a Text book before");
+        }
+        return true;
+    }
+    
 
     public String getAuthor()
     {
