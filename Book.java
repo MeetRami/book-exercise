@@ -3,9 +3,11 @@
  * This might form part of a larger application such
  * as a library system, for instance.
  *
- * @author (Insert your name here.)
- * @version (Insert today's date here.)
+ * @author Meet Rami
+ * @version 10/2/2017
  */
+
+
 class Book
 {
     // The fields.
@@ -62,6 +64,10 @@ class Book
         System.out.println("Author:" + author);
         System.out.println("Title: " + title);
         System.out.println("Pages: " + pages);
+        if(refNumber.length() == 0)
+        {
+            System.out.println("zzz");
+        }
     }
     
     public void setRefNumber(String ref)
