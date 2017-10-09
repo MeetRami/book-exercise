@@ -15,6 +15,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
 
     
     /**
@@ -27,6 +28,24 @@ class Book
         title = bookTitle;
         pages = bookPages;
         refNumber = ("");
+        borrowed = 0;
+    }
+    
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
+        if(ref.length() < 3)
+        System.out.println("Reference number must be at least length of 3!");
+    }
+    
+    public void setBorrowed(int bookBorrowed)
+    {
+        if(bookBorrowed > 0) {
+            borrowed = bookBorrowed + 1;
+        }
+        else {
+            System.out.println("Book Borrowed cannot be Negative!: ");
+        }
     }
 
     public String getAuthor()
@@ -47,6 +66,11 @@ class Book
     public String getRefNumber()
     {
         return refNumber;
+    }
+    
+    public int getBorrowed()
+    {
+        return borrowed;
     }
     
     public void printAuthor()
@@ -70,12 +94,7 @@ class Book
         }
     }
     
-    public void setRefNumber(String ref)
-    {
-        refNumber = ref;
-        if(ref.length() < 3)
-        System.out.println("Reference number must be at least length of 3!");
-    }
+    
     
     
 }
